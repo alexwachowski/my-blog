@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<% const currentDate = new Date();%>
+<% const formattedDate = currentDate.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });%>
+
+
+<body>
+    <div class="row g-5">
+        <div class="col-md-12 px-5">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">
+            From the Firehose
+          </h3>
+    
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1"><%= titleToExtract %> </h2>
+            <p class="blog-post-meta"> <%= formattedDate %> </p>
+    
+            
+            <hr>
+            <p ><%= contentToExtract %></p>
+            
+      </div>
+</body>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,38 @@
+/* Reset some default margin and padding for consistency */
+body, h1, p, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header (h1) */
+h1 {
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the main content (paragraph) */
+p {
+    color: #e00000;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

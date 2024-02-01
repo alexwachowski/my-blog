@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+
+<% const currentDate = new Date();%>
+<% const formattedDate = currentDate.toLocaleString('en-US', { month: 'long', day: 'numeric' });%>
+
+<body>
+  <div class="container my-5">
+    <div class="p-5 text-center bg-body-primary rounded-3">
+      <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
+      
+      <p class="col-lg-8 mx-auto fs-5 text-muted">
+       
+      </p>
+      <div class="d-inline-flex justify-content-center gap-2 mb-5">
+        <a href="create-post">
+          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 text-center mx-3" type="button" action="create-post">
+            Create Post
+          </button>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+    
+<%if (locals.posts) {%>
+  <%- include("partials/cards.ejs") %>
+<%}%>
+
+      
+       
+
+        
+</body>
+
+
+
+<%- include("partials/footer.ejs") %>

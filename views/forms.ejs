@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<form class="row g-3" action="/submit-post" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Post title</label>
+        <input  class="form-control" id="exampleFormControlInput1" name="title">
+      </div>
+      <div class="mb-0">
+        <label for="exampleFormControlTextarea1" class="form-label">Content here</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="content"></textarea>
+        <button type="submit" class="btn btn-primary col-lg-1 mb-4 mt-2">Submit</button>
+      </div>
+        
+</form>
+
+<%- include("partials/footer.ejs") %>
